@@ -1,38 +1,298 @@
-.App {
-  text-align: center;
+.google-background {
+  height: 100vh;
+  background-image: url("./Public/Images/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.google-login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 250px;
+  height: 240px;
+  position: relative;
+  padding: 60px 12px 10px 50px;
+  background-color: rgba(36, 173, 173, 0.349);
+  border-radius: 20px;
+  box-shadow: 2px 2px 20px;
+  top: 160px;
+  left: 42%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.google-login img {
+  width: 180px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  position: relative;
+  left: 18px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.left-drawer {
+  padding: 20px 80px 20px 155px;
+  height: 100%;
+  width: 200px;
+}
+
+.user img {
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.drawer-info {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.drawer-info-img img {
+  width: 250px;
+  border-radius: 50%;
+  margin-top: 25px;
+}
+
+.drawer-info-name h1 {
+  text-align: center;
+  font-family: inherit;
+  font-weight: 300;
+}
+.drawer-info-category {
+  list-style: none;
+  padding: 0px 0px 80px 0px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 300px;
+  height: 290px;
+  overflow-y: auto;
+  border-bottom: 1px solid grey;
+}
+.drawer-info-category::-webkit-scrollbar {
+  width: 1;
+}
+
+.drawer-info-category li {
+  margin-top: 0px;
+  position: relative;
+  list-style: lower-roman;
+}
+
+.drawer-info-name p {
+  text-align: center;
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.drawer-info-category li {
+  padding: 15px;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 300;
+}
+.drawer-info-btn button {
+  margin-top: 70px;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.home {
+  display: flex;
+}
+
+.input-task-body {
+  width: 690px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+input[name="title"] {
+  height: 40px;
+  font-family: inherit;
+  font-size: 23px;
+  font-weight: 400;
+}
+
+input[name="task"] {
+  height: 60px;
+  vertical-align: bottom;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left; /* Align the text to the left */
+  position: relative;
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+button {
+  padding: 10px;
+  background-color: #4caf50;
   color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #45a049;
+}
+.middle {
+  display: flex;
+  flex-direction: column;
+}
+.text-main {
+  width: 690px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  height: 450px;
+  overflow-y: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.text-main h3 {
+  font-family: inherit;
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+}
+.text-main h4 {
+  font-family: inherit;
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+}
+
+.text-main::-webkit-scrollbar {
+  width: 0;
+}
+.text-main li {
+  list-style-type: none;
+}
+.task-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  background-color: #f5f5f5;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.task-details h1 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  font-family: inherit;
+  font-weight: 400;
+}
+
+.task-details p {
+  color: #555;
+}
+
+.task-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.task-btn > * {
+  margin-left: 80%;
+  margin-bottom: 10%;
+}
+
+.task-btn p {
+  margin-left: auto;
+  font-size: 0.9em;
+  color: #888;
+}
+
+.edit-dialog-form {
+  width: 515px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.edit-dialog-form h3 {
+  text-align: center;
+  font-weight: 200;
+  font-size: 40px;
+}
+
+.detail-task-view {
+  width: 480px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  height: auto;
+}
+.detail-task-view h1 {
+  text-align: center;
+  font-weight: 200;
+  font-family: inherit;
+}
+
+.detail-task-view h2 {
+  border-bottom: 1px solid gray;
+  padding: 40px 0px 40px 10px;
+  font-weight: 300;
+  font-family: inherit;
+}
+.detail-task-view h4 {
+  font-weight: 200;
+  font-size: 18px;
+  font-family: inherit;
+  padding: 10px;
+
+  word-wrap: break-word;
+  height: 400px;
+  overflow-y: auto;
+}
+.detail-task-view p {
+  text-align: right;
+  font-weight: 100;
+}
+
+/* Add hover effect */
+.task-container:hover {
+  background-color: #e0e0e0;
+}
+
+@media (max-width: 600px) {
+  .drawer-info-btn button {
+    font-size: 14px;
   }
 }
